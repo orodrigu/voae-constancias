@@ -3,6 +3,8 @@ import os
 from tkinter import filedialog
 import PyPDF2
 
+
+
 root.directory = filedialog.askdirectory()
 
 route = root.directory+'/'
@@ -17,9 +19,13 @@ for constancia in constancias:
     textLength      = len(text)
     accountNumber   = ""
 
+    
+
+    print(text)
+
     for letter in range(textLength):
-        if text[letter]=="C" and text[letter+1]=="t" and text[letter+2]=="a" and text[letter+3]==".":
-            accountNumber = text[letter+4:letter+18]
+        if text[letter]=="R" and text[letter+1]=="U" and text[letter+2]=="C" and text[letter+3]==":":
+            accountNumber = text[letter+4:letter+1]
             accountNumber = accountNumber.strip()
             pdfFileObject.close()
 
